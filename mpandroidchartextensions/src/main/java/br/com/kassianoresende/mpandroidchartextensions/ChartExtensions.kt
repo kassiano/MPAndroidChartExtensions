@@ -4,7 +4,7 @@ import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.charts.CombinedChart
 
 
-fun CombinedChart.roundChartBar(radius:Int = 20){
+fun CombinedChart.setBarRadius(radius:Int = 20){
 
     val barChatRender = CustomCombinedChartRenderer(this, this.animator, this.viewPortHandler).apply {
         barChartRadius = radius
@@ -16,7 +16,7 @@ fun CombinedChart.roundChartBar(radius:Int = 20){
 }
 
 
-fun BarChart.roundBars(radius:Int = 20){
+fun BarChart.setBarRadius(radius:Int = 20){
 
     val barChatRender = CustomBarChartRender(this, this.animator, this.viewPortHandler).apply {
         setRadius(radius)
